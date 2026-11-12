@@ -1,12 +1,13 @@
 // import express
 const express =require('express');
+const todoRouters = require('./routes/TodoRoutes');
+
 // const { listen } = require('node:quic');
 
 //create an express application
 const app = express();
 
-app.get('/',(request,response) => {
-    response.send({ message:'hello world!'});
-});
+app.use('/todos',todoRouters);
+
 
 module.exports = app;
