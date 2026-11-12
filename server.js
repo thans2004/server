@@ -1,13 +1,5 @@
-// import express
-const express =require('express');
-// const { listen } = require('node:quic');
+const app = require("./app");
 
-//create an express application
-const app = express();
-
-app.get('/',(request,response) => {
-response.send({message:'hello'});
-})
 
 // start the server
 app.listen(3001,'localhost',()=>{
