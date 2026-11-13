@@ -1,16 +1,20 @@
 const app = require("./app");
 const mongoose = require('mongoose');
+const { MONGODB_URL, PORT, HOST } = require("./Utils/config");
+
 
 // connect to databses
 mongoose
-.connect('mongodb+srv://thansappan_db_user:B8VwbO4WenuWVUWD@cluster0.9rdjbvq.mongodb.net/')
-.then(() =>{
+.connect(MONGODB_URL)
+.then(() =>{    
     console.log('connected to databases')
+
+    // start the server
+app.listen(PORT , HOST,()=>{
+    console.log(`server is running at http://localhost:${PORT}`);
+});
+
 })
 .catch(error =>{
     console.log('error in connecting to databases')
-})
-// start the server
-app.listen(3001,'localhost',()=>{
-    console.log('server is running at http://localhost:3001');
 })
