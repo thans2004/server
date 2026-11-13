@@ -1,10 +1,15 @@
 const express = require('express');
 
-const todoRouters = express.Router();
+const todoRouter = express.Router();
 
-todoRouters.get('/',(request,response) => {
+todoRouter.get('/',(request,response) => {
     response.send({ message:'hello'});
 });
 
 
-module.exports =todoRouters;
+module.exports =todoRouter;
+
+
+
+
+//
