@@ -21,3 +21,7 @@ nodemon is a utility that automatically restarts your Node.js application whenev
 
 dotenv
 
+
+
+CRUD operation;
+

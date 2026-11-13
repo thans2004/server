@@ -1,0 +1,10 @@
+const todoController ={
+   
+    getAlTodos: async (request,response) => {
+    response.json({ message:'hello world!123'});
+
+}
+}
+
+
+module.exports = todoController;
