@@ -1,14 +1,36 @@
-const Todo = require('../models/todo');
+const Todo =  require ('../models/todo');
 
 const todoController ={
    
-    getAlTodos: async (request,response) => {
-
-    // get the todos from the databaes
+    getAllTodos: async (request,response) => {
+   try{
+     // get the todos from the databaes
     const todos = await Todo.find();
     
-    response.json(todos);
+    response.status(200).json(todos);
 
-}
-}
+   }catch (error){
+        response.status(500).json({'message':'Error in fetcting todos... '});
+       }
+    },
+
+    getTodoByID:async(request,response) =>{
+       try{
+        //get the id from the requesr object
+        const {id} =request.params;
+       
+      // get the todo for the id from the database
+      const todo = await Todo.findById(id);
+
+      //return the todo response
+      response.status(200).json(todo);
+   }  
+   catch (error){
+        response.status(500).json({'message':'Error in fetcting todos... '});
+       }
+    }
+
+
+    }
+
 module.exports = todoController;

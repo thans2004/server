@@ -1,9 +1,10 @@
 const express = require('express');
-const { getAlTodos } = require('../controllers/todoControllers');
+const { getAllTodos, getTodoByID} = require('../controllers/todoControllers');
 
 const todoRouter = express.Router();
 
-todoRouter.get('/',getAlTodos);
+todoRouter.get('/', getAllTodos);
+todoRouter.get('/:id',getTodoByID);
 
 
 module.exports =todoRouter;
@@ -11,4 +12,7 @@ module.exports =todoRouter;
 
 
 
-//
+
+
+
+
