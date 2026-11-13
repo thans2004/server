@@ -1,10 +1,14 @@
+const Todo = require('../models/todo');
+
 const todoController ={
    
     getAlTodos: async (request,response) => {
-    response.json({ message:'hello world!123'});
+
+    // get the todos from the databaes
+    const todos = await Todo.find();
+    
+    response.json(todos);
 
 }
 }
-
-
 module.exports = todoController;
