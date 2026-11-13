@@ -8,6 +8,9 @@ const todoRouter = require('./routes/TodoRoutes');
 //create an express application
 const app = express();
 
+// parse the requst body
+app.use(express.json());
+
 app.use('/todos', todoRouter);
 
 module.exports = app;

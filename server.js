@@ -17,4 +17,4 @@ app.listen(PORT , HOST,()=>{
 })
 .catch(error =>{
     console.log('error in connecting to databases')
-})
+});

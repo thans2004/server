@@ -2,14 +2,14 @@ const Todo =  require ('../models/todo');
 
 const todoController ={
    
-    getAllTodos: async (request,response) => {
-   try{
-     // get the todos from the databaes
-    const todos = await Todo.find();
+   getAllTodos: async (request,response) => {
+      try{
+       // get the todos from the databaes
+       const todos = await Todo.find();
     
-    response.status(200).json(todos);
+         response.status(200).json(todos);
 
-   }catch (error){
+       }catch (error){
         response.status(500).json({'message':'Error in fetcting todos... '});
        }
     },
@@ -19,18 +19,78 @@ const todoController ={
         //get the id from the requesr object
         const {id} =request.params;
        
-      // get the todo for the id from the database
-      const todo = await Todo.findById(id);
+         // get the todo for the id from the database
+       const todo = await Todo.findById(id);
 
-      //return the todo response
-      response.status(200).json(todo);
-   }  
-   catch (error){
+         //return the todo response
+       response.status(200).json(todo);
+       }  
+         catch (error){
         response.status(500).json({'message':'Error in fetcting todos... '});
        }
+    },
+
+   createTodo:async(request,response) =>{
+       try{
+        // fet the data from the request
+       const{title, describtion,isDone}=request.body;
+
+       //create a new todo items
+       const newTodo = new Todo({
+        title,
+        describtion,
+        isDone
+       });
+
+       //save the darabase
+        const todo =await newTodo.save();
+
+         //return the todo response
+         response.status(200).json(todo);
+        }  
+       catch (error){
+        response.status(500).json({'message':'Error in creating  at newtodos... '});
+       }
+    },
+
+   updateTodo:async(request,response) =>{
+       try{ 
+       //get the id from request params
+       const {id} =request.params;
+      
+         //get the data to update from the request body
+         const{title,describtion,isDone}=request.body;
+
+         //update in the database
+       const updateTodo = await Todo.findByIdAndUpdate(id,{
+            title,
+            describtion,
+            isDone
+
+         },{new:true});
+       //return the todo respons
+       response.status(200).json(updateTodo);
+          }  
+       catch (error){
+        response.status(500).json({'message':'Error in creating  at newtodos... '});
+       }
+   },
+
+   deleteTodo:async(request,response) =>{
+        try{ 
+       //get the id from request params
+       const {id} =request.params;
+
+         //delete  todo from  the database
+            await Todo.findByIdAndDelete(id);
+
+       //return the todo respons
+       response.status(200).json({'message':'Todo delated...'});
+       }  
+        catch (error){
+        response.status(500).json({'message':'Error in creating  at newtodos... '});
+       }
     }
-
-
     }
 
 module.exports = todoController;
