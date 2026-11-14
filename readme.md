@@ -35,4 +35,15 @@ status code;
 4xx: Client error responses (e.g., 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found)
 5xx: Server error responses (e.g., 500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable)
 
+middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. Middleware functions can perform various tasks, such as executing code, modifying the request and response objects, ending the request-response cycle, or calling the next middleware function in the stack.commonly used middleware functions include body-parser, cookie-parser,logger, and authentication middleware
 
+incoming requests ->middleware  1(ex:request body parsing,)
+middleware 2 (ex:authentication) -> route handler -> response
+
+1.built-in middleware -Express.js comes with several built-in middleware functions that can be used built-in middleware functions include express.json(), 
+ -express.json(); bod -parser in request with json  payloads
+
+ -express static();server serve static files specified directory
+ 
+2.third-party middleware-body-parser, cookie-parser, cors,etc
+3.custom middleware -logging, authentication, error handling, 
