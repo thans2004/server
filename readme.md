@@ -47,3 +47,13 @@ middleware 2 (ex:authentication) -> route handler -> response
  
 2.third-party middleware-body-parser, cookie-parser, cors,etc
 3.custom middleware -logging, authentication, error handling, 
+
+
+Authentication and authorization;
+
+-Authentication is the process of verifying the identity of a user or system, while authorization is the process of determining what actions or resources a user or system is allowed to access. In web applications, authentication is typically implemented using techniques such as username/password combinations, 
+-tokens, or -
+OAuth, 
+-muti-factor authentication, 
+
+Authentication is the process of verifying the identity of a user or system, while authorization is the process of determining what actions or resources a user or system is allowed to access. In web applications, authentication is typically implemented using techniques such as username/password combinations, tokens, or OAuth, while authorization is often implemented using role-based access control (RBAC) or attribute-based access control (ABAC) mechanisms.
