@@ -3,6 +3,7 @@ const User =require('../models/user');
 const bcrypt =  require ('bcrypt');
 const jwt =require('jsonwebtoken');
 const { JWT_SECRET, NODE_ENV } = require('../Utils/config');
+const { request } = require('express');
 
 const authController ={
 
@@ -89,16 +90,9 @@ loginUSer:async (req,res) =>{
 },
 me:async(req,res)=>{
     try{
-        // get the token in the req cookies
-        const token = req.cookies.token;
-
-        if(!token){
-            return res.status(401).json({message:'user not logged in'})
-        }
-        // verify the token
-        const decoded = jwt.verify(token,JWT_SECRET);
-        // get the  user id from the docoder token
-        const userId = decoded.userId;
+    
+        // get the  user id from the request object
+        const userId = req.userId;
         
 
         // get the user details from the databases
