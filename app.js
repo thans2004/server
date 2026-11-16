@@ -1,10 +1,12 @@
 // import express
 const express =require('express');
-const todoRouter = require('./routes/TodoRoutes');
-const bodyParser = require('body-parser');
-const logger = require('./middlewares/logger');
+const todoRouter   = require('./routes/TodoRoutes');
+const bodyParser   = require('body-parser');
+const logger       = require('./middlewares/logger');
 const errorHandler = require('./middlewares/errorHandler');
-const authRouter = require('./routes/AuthRoutes');
+const authRouter   = require('./routes/AuthRoutes');
+const cookieparser = require('cookie-parser');
+
 // const { listen } = require('node:quic');
 //create an express application
 
@@ -17,6 +19,9 @@ const app = express();
 // parser in using the body-parser libary
 
 app.use(bodyParser.json());
+
+// parser the cookies
+app.use(cookieparser());
 
 //request process begins or recieved request
 //log the incoming requests

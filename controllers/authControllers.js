@@ -6,7 +6,7 @@ const { JWT_SECRET, NODE_ENV } = require('../Utils/config');
 
 const authController ={
 
-    registerUser:async(req,res)=>{
+registerUser:async(req,res)=>{
         try{
             // get the uesr details from the request body
             const {name,email,password} = req.body;
@@ -86,6 +86,47 @@ loginUSer:async (req,res) =>{
     }catch(error){
         res.status(500).json({message:'login faild',error:error.massage});
        }
+},
+me:async(req,res)=>{
+    try{
+        // get the token in the req cookies
+        const token = req.cookies.token;
+
+        if(!token){
+            return res.status(401).json({message:'user not logged in'})
+        }
+        // verify the token
+        const decoded = jwt.verify(token,JWT_SECRET);
+        // get the  user id from the docoder token
+        const userId = decoded.userId;
+        
+
+        // get the user details from the databases
+        const user1 = await user.findById(userId).select('-password -__v');
+        
+        if(!user1){
+            return res.status(404).json({message:'user not found'})
+        }
+        res.status(200).json({user1});
+
+    }catch(error){
+        res.status(500).json({message:'error fecting  user details',error:error.massage})
+
     }
+},
+logoutUser:async(req,res)=>{
+try{
+// clear the cookie
+res.clearCookie('token',{
+            httpOnly:true,
+            secure:NODE_ENV ==='production', // set the devalapment
+            sameSite:'strict',  // adjust based on your needs
+            maxAge:3600000   // expiers time 1 hour
+   });
+   res.status(200).json({message:'logout successful'});
+}catch(error){
+    res.status(500).json({message:'error logging out user ',error:error.message})
+}
+}
 }
 module.exports=authController;
