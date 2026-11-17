@@ -1,6 +1,6 @@
 // import express
 const express =require('express');
-const todoRouter   = require('./routes/TodoRoutes');
+const todoRouter   = require('./routes/todoRoutes');
 const bodyParser   = require('body-parser');
 const logger       = require('./middlewares/logger');
 const errorHandler = require('./middlewares/errorHandler');

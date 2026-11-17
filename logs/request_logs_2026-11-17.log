@@ -28,3 +28,168 @@ Request received at :2026-11-17T00:32:48.723Z
    Cookies:{}
    
 --------------------------------------
+Request received at :2026-11-17T01:21:41.146Z
+
+   Request method :POST
+
+   Request.URL/auth/login
+
+   Request body:{"email":"thansh12@guvi.in","password":"1234567"}
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"caaf7999-52ad-4264-b782-b94170eda438","content-type":"application/json","content-length":"63","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+
+   Cookies:{}
+   
+--------------------------------------
+Request received at :2026-11-17T01:21:44.608Z
+
+   Request method :POST
+
+   Request.URL/auth/me
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"eb9ee8b6-7767-4994-97fa-c7deb8638b89","content-length":"0","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+   
+--------------------------------------
+Request received at :2026-11-17T01:21:47.622Z
+
+   Request method :GET
+
+   Request.URL/todos
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"2a552cbf-5862-46df-ad2c-9ffa3c4d0a47","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+   
+--------------------------------------
+Request received at :2026-11-17T01:24:38.690Z
+
+   Request method :GET
+
+   Request.URL/todos
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"7c6ac54e-d8ae-45d7-994e-d109f481c723","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+   
+--------------------------------------
+Request received at :2026-11-17T01:25:11.078Z
+
+   Request method :POST
+
+   Request.URL/auth/logout
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"216019bb-a603-4868-9039-f9ae34cba60c","content-length":"0","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYTBiMGQ0ZDk1YWViY2MwOTY1MGIiLCJpYXQiOjE3OTQ4Nzg1MDEsImV4cCI6MTc5NDg4MjEwMX0.secdj9CzPAQiL75UzJ4NnlCHv457arMKp4ly2E_NnFQ"}
+   
+--------------------------------------
+Request received at :2026-11-17T01:25:31.312Z
+
+   Request method :POST
+
+   Request.URL/auth/register
+
+   Request body:{"name":"sathish","email":"sathish@guvi.in","password":"1234567"}
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"a70f0f06-caa7-4cfd-9cd8-8b51fb7c2d4b","content-type":"application/json","content-length":"87","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+
+   Cookies:{}
+   
+--------------------------------------
+Request received at :2026-11-17T01:25:52.925Z
+
+   Request method :POST
+
+   Request.URL/auth/login
+
+   Request body:{"email":"sathish@guvi.in","password":"1234567"}
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"c01eee52-2e70-4ac3-84fb-03cbc6a37999","content-type":"application/json","content-length":"62","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+
+   Cookies:{}
+   
+--------------------------------------
+Request received at :2026-11-17T01:25:57.854Z
+
+   Request method :POST
+
+   Request.URL/auth/me
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"8cfc0359-2c47-49dd-b6fa-a8811b96c59a","content-length":"0","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+   
+--------------------------------------
+Request received at :2026-11-17T01:26:03.279Z
+
+   Request method :GET
+
+   Request.URL/todos
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"e6e3d5df-68dd-4efc-8722-7dd2589cc460","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+   
+--------------------------------------
+Request received at :2026-11-17T01:26:52.245Z
+
+   Request method :GET
+
+   Request.URL/todos
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"8fa6df04-3d87-423d-ba04-8ec55ed5f3b0","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+   
+--------------------------------------
+Request received at :2026-11-17T01:29:17.575Z
+
+   Request method :DELETE
+
+   Request.URL/todos/6af7307a45c18f57cc5945b4
+
+   Request body:undefined
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"7ecdbab6-e21d-48e4-8bce-87c9fd9a45a9","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+
+   Cookies:{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWZiYWQwYmY0YTllYjI0NzYzZjMyYTkiLCJpYXQiOjE3OTQ4Nzg3NTMsImV4cCI6MTc5NDg4MjM1M30.1xZBo384GeZSYKWjgpU14sM5GwlurOnDA3Nroi1sKkE"}
+   
+--------------------------------------
