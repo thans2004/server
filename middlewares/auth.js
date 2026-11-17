@@ -20,14 +20,19 @@ try{
 
 //    call the next middleware or eoute handler
    next();
-                         
-                 
-                
+                                     
 }catch(error){
     return res.status(500).json({message:'error in authenticating user..',error:error.message});
    }
 }
+  
+   const allowedRoles =(roles)=>{
+      return (req,res,next)=>{
+
+      }
+   }
 
 module.exports ={
-    isAuthenticated
+    isAuthenticated,
+    allowedRoles
 }

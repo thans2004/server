@@ -1,0 +1,30 @@
+Request received at :2026-11-17T00:29:42.803Z
+
+   Request method :POST
+
+   Request.URL/auth/register
+
+   Request body:{"name":"thansh","email":"thansh12@guvi.in","password":"1234567"}
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"f85ba2ea-a1f9-4d27-a2f2-482367df6df2","content-type":"application/json","content-length":"87","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+
+   Cookies:{}
+   
+--------------------------------------
+Request received at :2026-11-17T00:32:48.723Z
+
+   Request method :POST
+
+   Request.URL/auth/register
+
+   Request body:{"name":"thansh","email":"thansh12@guvi.in","password":"1234567"}
+
+   Request params:{}
+
+   Request headers:{"cache-control":"no-cache","postman-token":"a60190c8-eb75-4b4d-904c-9c54b69b6926","content-type":"application/json","content-length":"87","host":"localhost:3001","user-agent":"PostmanRuntime/2.16.2","accept":"*/*","accept-encoding":"gzip, deflate, br","connection":"keep-alive"}
+
+   Cookies:{}
+   
+--------------------------------------
